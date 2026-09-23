@@ -1,8 +1,4 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 46408
 
 ## Current behavior
 
@@ -14,4 +10,4 @@ The API requests should be normalized and directed to `/tfs/_apis/Location` and 
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/46408
