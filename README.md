@@ -2,11 +2,11 @@
 
 ## Current behavior
 
-Renovate makes API requests to `/tfs/Collection/_apis/Location` and `/tfs/Collection/_apis/git`, which fails due to the endpoints not existing. Renovate reports API timeouts, curl to the same endpoints returns 404. Other requests are working and it is able to create pull requests in azure devops server.
+Renovate makes API requests to `/tfs/Collection/_apis/Location`, `/tfs/Collection/_apis/git` and `/tfs/Collection/_apis/ResourceAreas` that fail randomly with timeout errors. Other requests are working and it is able to create pull requests in azure devops server.
 
 ## Expected behavior
 
-The API requests should be normalized and directed to `/tfs/_apis/Location` and `/tfs/_apis/git` (without the collection name), but the repositories discovered under `/tfs/Collection/`.
+The API requests should succeed, or the timeout/concurrency be configurable to make it able to do so. 
 
 ## Link to the Renovate issue or Discussion
 
